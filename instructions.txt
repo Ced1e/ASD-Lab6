@@ -1,0 +1,21 @@
+2. Format the font style and sizes. Use consistent font settings, with
+distinct sizes and weights for headings and body text.
+
+3. Style hyperlinks and lists. Customize the link colors, hover effects,
+and remove underlines if necessary. Adjust list spacing, bullet
+styles and alignment.
+
+Layout Requirements
+4. Use a 3-column layout for the main content area.
+
+5. Format the header and footer. Align the header (including the
+logo) with the About USeP section for consistent layout alignment.
+Ensure the footer spans the full width of the page and that its text
+is centered horizontally.
+
+
+6. The layout must remain centered on the screen even when the
+page is zoomed in or out.
+
+
+7. Apply proper spacing, padding and alignment for readability. 
