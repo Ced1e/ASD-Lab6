@@ -1,27 +1,31 @@
-/* RESET / BASE */
+/* =========================
+   1. BASE & RESET
+========================= */
 * {
     box-sizing: border-box;
 }
 
-/* BODY */
 body#usep {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
-    color: gray;
+    background: whitesmoke url("image/gradient.jpg") repeat-x;
+    color: #444;
 }
 
-/* CONTAINER */
+/* =========================
+   2. CONTAINER (CENTERED)
+========================= */
 #container {
     width: 1000px;
-    margin: 0 auto;
-    background-color: white;
+    margin: 0 auto;              /* stays centered on zoom */
+    background-color: #ffffff;
 }
 
-/* HEADER */
+/* =========================
+   3. HEADER
+========================= */
 #header {
     background-color: skyblue;
-    color: white;
     padding: 15px;
 }
 
@@ -35,84 +39,113 @@ body#usep {
 }
 
 #header span {
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: bold;
     color: white;
     vertical-align: middle;
     margin-left: 10px;
 }
 
-/* MAIN AREA */
+/* =========================
+   4. MAIN AREA (3 COLUMNS)
+========================= */
 #main {
     padding: 15px;
     overflow: hidden; /* clears floats */
 }
 
-/* COLUMN LAYOUT */
+/* Column widths */
 .column1 {
     float: left;
     width: 25%;
+    padding-right: 10px;
 }
 
 .column2 {
     float: left;
     width: 45%;
+    padding: 0 10px;
 }
 
 #linklist {
     float: left;
     width: 30%;
+    padding-left: 10px;
 }
 
-/* SECTION STYLES */
+/* =========================
+   5. SECTION BOXES
+========================= */
 #about,
 #vision,
 #mission,
 #goals,
-#linklist {
+#list1,
+#list2,
+#list3 {
     background-color: rgb(243, 224, 227);
-    color: darkgray;
     border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
 }
 
-/* HEADINGS */
-h2, h3 {
-    margin-top: 0;
-    color: skyblue;
+/* =========================
+   6. TYPOGRAPHY
+========================= */
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b6cb0;
 }
 
-/* TEXT */
-p, li {
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b6cb0;
+}
+
+p {
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
 }
 
-/* LINKS */
+li {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================
+   7. LINKS & LISTS
+========================= */
 a {
-    color: rgb(101, 101, 238);
-    text-decoration: none;
+    color: #1a4fd8;
+    text-decoration: none;       /* underline removed */
 }
 
 a:hover {
-    color: skyblue;
-}
-
-/* LISTS */
-ul {
-    padding-left: 20px;
-}
-
-ul li {
+    color: #0d2f8b;
     text-decoration: underline;
 }
 
-/* FOOTER */
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: square;
+    margin-bottom: 6px;
+}
+
+/* =========================
+   8. FOOTER
+========================= */
 #footer {
-    background-color: skyblue;
-    color: whitesmoke;
-    text-align: center;
-    padding: 10px;
-    font-size: 12px;
     clear: both;
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
 }
